@@ -149,13 +149,13 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Sensor</label>
     <nameField>
-        <label>Sensor Name</label>
+        <label>Name</label>
         <type>Text</type>
     </nameField>
     <pluralLabel>Sensors</pluralLabel>
