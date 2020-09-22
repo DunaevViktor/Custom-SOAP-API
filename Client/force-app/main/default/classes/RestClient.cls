@@ -14,7 +14,7 @@ public with sharing class RestClient {
         HttpRequest request = new HttpRequest();  
         request.setEndpoint(AccessToService.SERVER_BASE_URL + '/services/apexrest/sensorEvent');  
         request.setMethod('PUT');    
-        request.setHeader('Authorization', 'Bearer ' + AccessToService.getToken());
+        request.setHeader('Authorization', 'Bearer ' + token);
         request.setHeader('Content-Type', 'application/json;charset=UTF-8');
         request.setBody(JSON.serialize(sensorData));      
         HttpResponse responce = http.send(request);
