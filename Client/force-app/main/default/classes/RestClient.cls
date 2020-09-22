@@ -2,9 +2,11 @@ public with sharing class RestClient {
     
     //RestClient.makeRestRequest();
 
+    //2 callbackUrl: authorization and request
+    //OAuth policies: Relax Ip Restriction (for IP not from the range of the organization)
     //0012w00000M5XnEAAV
     public static String ACCOUNT_ID = '0012w00000M5XnEAAV';
-    public static String SENSOR_ID = '200';
+    public static String SENSOR_ID = 'rest name';
 
     @future(callout=true)
     public static void makeRestRequest() {

@@ -3,7 +3,8 @@
     <contactEmail>rulit.ivan@yandex.ru</contactEmail>
     <label>Connect Client App</label>
     <oauthConfig>
-        <callbackUrl>https://client-soap-dev-ed.my.salesforce.com/services/authcallback/ServiceSOAP</callbackUrl>
+        <callbackUrl>https://client-soap-dev-ed.my.salesforce.com/services/authcallback/ServiceSOAP
+https://client-soap-dev-ed.my.salesforce.com</callbackUrl>
         <consumerKey>3MVG9n_HvETGhr3Dhguxk_PY7SNDCMofBfsHxu1z.r_BplKJBWuhWwWVLC_7wXf334Oc9FB2hm8eRmXI6Ho66</consumerKey>
         <isAdminApproved>false</isAdminApproved>
         <isConsumerSecretOptional>false</isConsumerSecretOptional>
@@ -12,7 +13,7 @@
         <scopes>RefreshToken</scopes>
     </oauthConfig>
     <oauthPolicy>
-        <ipRelaxation>ENFORCE</ipRelaxation>
+        <ipRelaxation>BYPASS</ipRelaxation>
         <refreshTokenPolicy>infinite</refreshTokenPolicy>
     </oauthPolicy>
 </ConnectedApp>
