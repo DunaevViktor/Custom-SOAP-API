@@ -13,13 +13,13 @@ public with sharing class SensorLogic {
     }
     
     //Searches for an Sensor by the specified parameters
-    public Sensor__c findSensor(String sensorId, String accountId) {
+    public Sensor__c findSensor(String sensorName, String accountId) {
         
         if(!isAccountExists(accountId)) {
             throw new System.IllegalArgumentException(NO_SUCH_ACCOUNT);
         }
         
-        List<Sensor__c> sensors = [SELECT Name FROM Sensor__c WHERE Name =: sensorId
+        List<Sensor__c> sensors = [SELECT Name FROM Sensor__c WHERE Name =: sensorName
                                    AND Account_Id__c =: accountId LIMIT 1];
         if(sensors.size() == 0) {
             return null;

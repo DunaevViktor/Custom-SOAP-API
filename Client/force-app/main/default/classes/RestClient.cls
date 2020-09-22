@@ -1,21 +1,14 @@
 public with sharing class RestClient {
     
-    //RestClient.makeRestRequest();
+    //RestClient.makeRestRequest(AccessToService.getToken(), 'rest name', '0012w00000M5XnEAAV', new Integer[]{1,3,3,7,4,8});
 
     //2 callbackUrl: authorization and request
     //OAuth policies: Relax Ip Restriction (for IP not from the range of the organization)
     //0012w00000M5XnEAAV
-    public static String ACCOUNT_ID = '0012w00000M5XnEAAV';
-    public static String SENSOR_ID = 'rest name';
 
-    @future(callout=true)
-    public static void makeRestRequest() {
-        Integer[] coordinates = new Integer[]{};
-        for(Integer i = 0; i < 6; i++ ){
-            coordinates.add(i);
-        }
+    public static HttpResponse makeRestRequest(String token, String sensorName, String accountId, Integer[] coordinates) {
         
-        SensorData data = new SensorData(ACCOUNT_ID, SENSOR_ID, coordinates);
+        SensorData sensorData = new SensorData(accountId, sensorName, coordinates);
 
         Http http = new Http();
         HttpRequest request = new HttpRequest();  
@@ -23,11 +16,8 @@ public with sharing class RestClient {
         request.setMethod('PUT');    
         request.setHeader('Authorization', 'Bearer ' + AccessToService.getToken());
         request.setHeader('Content-Type', 'application/json;charset=UTF-8');
-        request.setBody(JSON.serialize(data));        
+        request.setBody(JSON.serialize(sensorData));      
         HttpResponse responce = http.send(request);
-        System.debug('Body ' + responce.getBody());
-        System.debug('Status ' + responce.getStatus());
-        System.debug('Status code ' + responce.getStatusCode());
-        
+        return responce;
     }
 }

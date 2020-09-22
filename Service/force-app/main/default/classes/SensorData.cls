@@ -1,9 +1,9 @@
 //Wrapping class for JSON.deserialize
 public with sharing class SensorData {
     
-    public String accountId;
-    public String sensorId;
-    public Integer[] coordinates;
+    public String accountId {get;set;}
+    public String sensorId {get;set;}
+    public Integer[] coordinates {get;set;}
     
     public SensorData(String accountId, String sensorId, Integer[] coordinates) {
         this.accountId = accountId;
