@@ -2,7 +2,7 @@
 public with sharing class SensorEventLogic {
     
     //Builds one SensorEvent according to the specified parameters
-    public Sensor_Event__c buildSensorEvent(String sensorId, Integer x, Integer y, Integer z) {
+    public Sensor_Event__c buildSensorEvent(Id sensorId, Integer x, Integer y, Integer z) {
         Sensor_Event__c event = new Sensor_Event__c();
         event.x__c = x;
         event.y__c = y;
@@ -12,7 +12,7 @@ public with sharing class SensorEventLogic {
     }
     
     //Creates and inserts a list of SensorEvent
-    public List<Sensor_Event__c> createSensorEvents(String sensorId, Integer[] coordinates) {
+    public List<Sensor_Event__c> createSensorEvents(Id sensorId, Integer[] coordinates) {
         Integer amount = getCorrectAmount(coordinates);
         List<Sensor_Event__c> events = new List<Sensor_Event__c>();
         for(Integer i = 0; i <= amount; i=i+3) {
