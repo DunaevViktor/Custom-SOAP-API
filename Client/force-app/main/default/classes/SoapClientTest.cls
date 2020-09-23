@@ -14,4 +14,15 @@
             System.assert(false, UNEXPECTED_EXCEPTION);
         }
     }
+    
+    //delete this classes?
+    @IsTest public static void testClassFromWSDL(){
+        wsdlFromSoapService.CallOptions_element callOpt = new wsdlFromSoapService.CallOptions_element();
+        wsdlFromSoapService.DebuggingHeader_element debHead = new wsdlFromSoapService.DebuggingHeader_element();
+        wsdlFromSoapService.location location = new wsdlFromSoapService.location();
+        wsdlFromSoapService.AllowFieldTruncationHeader_element allowField = new wsdlFromSoapService.AllowFieldTruncationHeader_element();
+        wsdlFromSoapService.address address = new wsdlFromSoapService.address();
+        wsdlFromSoapService.DebuggingInfo_element debugInfo = new wsdlFromSoapService.DebuggingInfo_element();
+        wsdlFromSoapService.LogInfo logInfo = new wsdlFromSoapService.LogInfo();
+    }
 }
