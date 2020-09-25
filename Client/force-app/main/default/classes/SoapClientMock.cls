@@ -1,3 +1,4 @@
+//Mock class for testing SoapClient class
 @IsTest global with sharing class SoapClientMock implements WebServiceMock {
     global void doInvoke(
            Object stub,

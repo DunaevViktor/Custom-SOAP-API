@@ -1,3 +1,4 @@
+//Class for making SOAP requests to service
 public with sharing class SoapClient {
 
     //SoapClient.makeSoapRequest('sensor name', '0012w00000M5XnEAAV', new Integer[]{1,1,1,2,2,2});

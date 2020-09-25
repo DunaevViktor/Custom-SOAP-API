@@ -1,3 +1,4 @@
+//Class for making REST requests to service
 public with sharing class RestClient {
     
     //RestClient.makeRestRequest(new SensorEventData('a002w00000BxPMoAAN', 1,1,1));

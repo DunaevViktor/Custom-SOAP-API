@@ -1,3 +1,4 @@
+//Class for testing SoapService class
 @IsTest public with sharing class SoapServiceTest {
     
     private static String SENSOR_NAME = 'Sensor Name';

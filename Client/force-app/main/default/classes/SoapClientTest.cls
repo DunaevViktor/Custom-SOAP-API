@@ -1,3 +1,4 @@
+//Class for testing SoapClient class
 @IsTest public with sharing class SoapClientTest {
     
     private static String ACCOUNT_ID = 'accId';

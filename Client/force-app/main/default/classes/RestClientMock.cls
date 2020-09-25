@@ -1,3 +1,4 @@
+//Mock class for testing RestClient class
 @IsTest global with sharing class RestClientMock implements HttpCalloutMock {
     global HTTPResponse respond(HTTPRequest request) {
         HttpResponse response = new HttpResponse();

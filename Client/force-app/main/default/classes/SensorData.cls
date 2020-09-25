@@ -1,3 +1,4 @@
+//Class for serializing request bodies in SOAP requests
 public with sharing class SensorData {
     public String accountId {get;set;}
     public String sensorId {get;set;}

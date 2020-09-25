@@ -1,4 +1,4 @@
-//Class for serializing sensor event object
+//Class for serializing SensorEvent object
 public with sharing class SensorEventData {
     private String SensorEnd {get;set;}
     private Integer xEnd {get;set;}

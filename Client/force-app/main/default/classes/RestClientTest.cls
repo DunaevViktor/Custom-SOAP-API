@@ -1,3 +1,4 @@
+//Class for testing RestClient class
 @IsTest public with sharing class RestClientTest {
     
     private static String SENSOR_ID = 'sensorID';
@@ -12,5 +13,4 @@
         HttpResponse response = RestClient.makeRestRequest(new SensorEventData(SENSOR_ID, X, Y, Z));
         System.assertEquals(200, response.getStatusCode());
     }
-
 }

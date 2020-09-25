@@ -1,3 +1,4 @@
+//Class, which transform and save data, which come with requests
 public with sharing class MainService {
     
     public void insertSensorEventsData(SensorData sensorData) {

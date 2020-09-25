@@ -1,3 +1,4 @@
+//Class for testing SensorEventLogic class
 @IsTest public with sharing class SensorEventLogicTest {
     
     private static String SENSOR_NAME = 'Sensor Name';

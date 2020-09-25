@@ -1,3 +1,4 @@
+//Class, which allow SOAP requests for org (Custom SOAP)
 global with sharing class SoapService {
     
     webservice static void upsertData(String data) {
